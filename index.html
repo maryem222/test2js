@@ -1,0 +1,190 @@
+<html>
+
+<head>
+    
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<link href="CSS/index.css" rel="stylesheet">
+<link href="css/all.min.css " rel="stylesheet">
+</head>
+
+
+
+<body>
+
+    <div class="sidebar">
+      <ul id="lists" >
+        <li >
+          <a id="search" aria-current="page" >search</a>
+        </li>
+        <li >
+          <a  id="categ" >categories</a>
+        </li>
+        <li >
+          <a id="area"  >Area</a>
+        </li>
+        <li >
+          <a  id="ing">Ingredients</a>
+        </li>
+        <li >
+          <a  id="contact">Contact Us</a>
+        </li>
+      </ul>
+      
+      <button id="sidebarbtn" class="sidebarbtn">
+        <img class=" w-2" src="logo.png">
+        <span></span>
+      </button>
+    <p class="position-relative down ms-2">Copyright Â© 2019 All<br> Rights Reserved.</p>
+    </div>
+
+
+    
+
+<div class="container  ">
+  <div class="row">
+    <div class="col-md-6 ">
+<!-----Search by name start-->
+<input id="SearchName" class="form-control w-100 mt-5 bg-1 py-3  "  placeholder="Search by name" > 
+
+<!--start of layer-->
+
+
+<!---end of layer-->
+
+</div>
+<!-----Search by name end-->
+
+
+
+
+
+
+<!-----Search by letter start-->
+<div class="col-md-6 ">
+<input id="SearchLetter" class="form-control w-100 mt-5 bg-1 py-3  "  placeholder="Search by first letter" > 
+
+</div>
+<!-----Search by letter end-->
+
+</div>
+</div>
+
+
+<!--showdata of search by name-->
+<div id= 'container1' class="container d-none mt-5">
+  <div id="row" class="row gy-4 ">
+  
+  </div>
+  </div>
+
+  <!--showdata of search by letter-->
+  <div id= 'container2' class="container d-none mt-5">
+    <div id="row2" class="row gy-4">
+    
+    </div>
+    </div>
+
+
+
+    <!--showdata of categories-->
+  <div id= 'container3' class="container  mt-5 bg-black">
+    <div id="row3" class="row gy-4 d-none">
+    
+    </div>
+    </div>
+
+
+    <!--showdata of contaaaaact-->
+  <div id= 'container4' class="container  mt-5 bg-black filt">
+    <div id="row4" class="row gy-4 d-none">
+      <div class="col-md-9 m-auto mt-5  ">
+        <h2 class="text-center mb-5">Contact Us ...</h2>
+        <div class="d-flex flex-row ">
+  
+          <input id="namef" type="text" class="form-control pb-2 me-5" placeholder="Enter your Name" aria-label="First name">
+        
+          
+        
+        
+          <input id="mail" type="text" class="form-control pb-2" placeholder="Enter E-mail" aria-label="First name">
+  
+        
+      </div>
+  
+      <div class="d-flex flex-row ">
+        <div id="invalname" class="alert alert-danger w-50 d-none  ">
+          <p>The name is invalid</p>
+        </div>
+  
+        <div id="invalmail" class=" alert alert-danger w-50  d-none ms-left  ">
+          <p>Enter valid email. *Ex: xxx@yyy.zzz</p>
+        </div>
+      </div>
+  
+      
+    
+  
+  
+  
+  
+      <div class="d-flex flex-row mt-3 ">
+  
+        <input id="phone" type="text" class="form-control pb-2 me-5" placeholder="Enter Phone" aria-label="First name">
+        <input id="age" type="text" class="form-control pb-2" placeholder="Enter Age" aria-label="First name">
+        
+  
+      </div>
+  
+      <div class="d-flex flex-row ">
+        <div id="invalphone" class="alert alert-danger w-50  d-none  ">
+          <p>Enter valid Phone Number</p>
+        </div>
+  
+        <div id="invalage" class=" ms-left alert alert-danger w-50  d-none ">
+          <p>Enter valid Age</p>
+        </div>
+      </div>
+  
+  
+      <div class="d-flex flex-row mt-3 ">
+  
+        <input id="pass" type="text" class="form-control pb-2 me-5" placeholder="Enter Password" aria-label="First name">
+        <input id="repass" type="text" class="form-control pb-2" placeholder="Enter RePassword" aria-label="First name">
+        
+  
+      </div>
+  
+  
+      <div class="d-flex flex-row ">
+        <div id="invalpass" class="alert alert-danger w-50  d-none  ">
+          <p>Enter valid password *Minimum eight characters, at least one letter and one number:*</p>
+        </div>
+  
+        <div id="invalrepass" class=" ms-left alert alert-danger w-50  d-none  ">
+          <p>Enter valid Repassword</p>
+        </div>
+      </div>
+  
+  
+      <button id="submit" disabled class="btn btn-danger position-relative mid mt-3  ">Submit</button> 
+  </div>
+    
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="jquery-3.6.1.min.js"></script>  
+<script src="revise.js"></script>   
+</body>
+</html>
